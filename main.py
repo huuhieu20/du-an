@@ -1,22 +1,22 @@
 import streamlit as st
 
-st.sidebar.image(
-    "https://link-to-image.com/son_tung.jpg", 
-    use_column_width=True
-)
-st.sidebar.title("Sơn Tùng M-TP")
-st.sidebar.write("**Họ và tên:** Nguyễn Thanh Tùng")
-st.sidebar.write("**Nghệ danh:** Sơn Tùng M-TP")
-st.sidebar.write("""
-Nguyễn Thanh Tùng, được biết đến với nghệ danh Sơn Tùng M-TP,
-là ca sĩ, nhạc sĩ, rapper và diễn viên nổi tiếng của Việt Nam.
-Anh được mệnh danh là "Hoàng tử Vpop" và đã giành nhiều giải thưởng âm nhạc uy tín.
-""")
+# Sidebar - Thông tin ca sĩ
+with st.sidebar:
+    st.image("sontung.jpg", use_container_width=True)  # Đổi thành ảnh của bạn
+    st.header("Sơn Tùng M-TP")
+    st.write("**Họ và tên:** Nguyễn Thanh Tùng")
+    st.write("**Nghệ danh:** Sơn Tùng M-TP")
+    st.write(
+        "Nguyễn Thanh Tùng, được biết đến với nghệ danh Sơn Tùng M-TP, là ca sĩ, nhạc sĩ, rapper "
+        "và diễn viên nổi tiếng của Việt Nam. Anh được mệnh danh là 'Hoàng tử Vpop' và đã giành "
+        "nhiều giải thưởng âm nhạc uy tín."
+    )
 
-st.header("Bài hát yêu thích")
+# Nội dung chính
+st.title("Bài hát yêu thích")
 st.subheader("Chạy Ngay Đi")
-st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+st.audio("chay_ngay_di.mp3")  # Đổi thành file nhạc của bạn
 
-st.header("MV yêu thích")
+st.title("MV yêu thích")
 st.subheader("Hãy Trao Cho Anh")
 st.video("https://www.youtube.com/watch?v=knW7-x7Y7RE")
