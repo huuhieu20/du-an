@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.sidebar.image(
-    "https://upload.wikimedia.org/wikipedia/commons/e/e4/S%C6%A1n_T%C3%B9ng_M-TP_on_%22Sky_Decade%22_in_Hanoi_11.png", 
+    "https://link-to-image.com/son_tung.jpg", 
     use_column_width=True
 )
 st.sidebar.title("Sơn Tùng M-TP")
